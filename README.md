@@ -3,6 +3,10 @@
 
 CipherBox is a secure file encryption system that uses RSA and AES hybrid encryption to protect your files. Built with Python and Streamlit, it provides a user-friendly interface for file encryption and decryption while maintaining high security standards.
 
+## 🌐 Live Demo
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://cipherbox.streamlit.app/)
+
+
 ## Features
 
 ### 🛡️ Security
