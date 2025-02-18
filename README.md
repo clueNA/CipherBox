@@ -37,7 +37,7 @@ CipherBox is a secure file encryption system that uses RSA and AES hybrid encryp
 ### Setup
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/cipherbox.git
+git clone https://github.com/clueNA/cipherbox.git
 cd cipherbox
 ```
 
