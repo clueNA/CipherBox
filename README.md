@@ -175,7 +175,7 @@ Apache-2.0 license - See LICENSE file for details
 
 ## Contact
 
-- GitHub Issues: [Create Issue](https://github.com/yourusername/cipherbox/issues)
+- GitHub Issues: [Create Issue](https://github.com/clueNA/cipherbox/issues)
 
 ## Acknowledgments
 
