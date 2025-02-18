@@ -58,7 +58,7 @@ def render_login():
                 st.session_state.username = user.username
                 st.session_state.password = password
                 st.session_state.login_time = datetime.utcnow()
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.error("Invalid credentials!")
 
@@ -194,7 +194,7 @@ def render_sidebar(current_user):
         st.session_state.password = None
         st.session_state.login_time = None
         st.session_state.confirm_delete = False
-        st.experimental_rerun()
+        st.rerun()
     
     # Add space between buttons
     st.sidebar.write("")
@@ -212,24 +212,24 @@ def render_sidebar(current_user):
             if clear_user_data(current_user.id):
                 st.sidebar.success("All your data has been cleared!")
                 st.session_state.confirm_delete = False
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.sidebar.error("Failed to clear data. Please try again.")
         
         if col2.button("No, Cancel"):
             st.session_state.confirm_delete = False
-            st.experimental_rerun()
+            st.rerun()
 
 def main():
     st.set_page_config(
-        page_title="File Encryption System",
+        page_title="Cipher Box",
         page_icon="🔒",
         layout="wide"
     )
     
     init_session_state()
     
-    st.title("File Encryption System")
+    st.title("Cipher Box")
     
     if not st.session_state.user_id:
         tab1, tab2 = st.tabs(["Login", "Register"])
@@ -246,7 +246,7 @@ def main():
             st.session_state.password = None
             st.session_state.login_time = None
             st.session_state.confirm_delete = False
-            st.experimental_rerun()
+            st.rerun()
             return
         
         # Show main interface
